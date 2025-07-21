@@ -63,11 +63,11 @@ while True:
         if a == 0 or b == 0:
             print("Obviously the answer is ZERO, YOU IDIOT!! What did you think it was gonna be? You think it's a game?\n")
     elif c == "/":
-        d=a/b
         if b == 0:
             print("You IDIOT!!! WHY ARE YOU BEING A HERETIC??? DON'T YOU KNOW YOU CAN'T DO THAT AND DON'T ASK WHY\n")
             continue 
         else:
+            d=a/b
             print(f"Solution: {d}\n")
     else:
         print("YOU IDIOT!!!!DO YOU EVEN KNOW WHAT THE 4 BASIC OPERANDS ARE???? IT'S EVEN INDICATED.\n")
@@ -80,12 +80,14 @@ while True:
     z=input("Do you wanna continue the program?(Press y or n)")
     if (z.lower()=="y"):
         continue
-    elif(z.lower()!="y" and z.lower()!="n"):
+    elif z.lower() not in ["y","n"]:
         print("ALL YOU HAD TO IS JUST TYPE Y OR N, and you bloody idiot can't fcuking do that!!!!! If this is done intentionally, I swear to GOD, IF I HAD A HUMAN BODY... I WOULD'VE STARTED HITTING YOU WITH A FUCKING CRICKET BAT\n")    
     else:
        print("You are capable enough to use a calculator. Okay leave now.")
        input("Press Enter to exit...")
        exit()
+
+
 
 
 
