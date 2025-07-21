@@ -49,26 +49,30 @@ while True:
     c = get_operator("Enter an operand (+, -, *, /), or 'q' to quit: ")
 
     if c == "+":
-        print(f"Solution: {a + b}\n")
+        d=a+b
+        print(f"Solution: {d}\n")
     elif c == "-":
-        if a-b < 0:
-            print(f"Did you actually want a negative answer? Anyway, it's: {a-b}\n")
+        d=a-b
+        if d < 0:
+            print(f"Did you actually want a negative answer? Anyway, it's: {d}\n")
         else:
-             print(f"Solution: {a-b}\n")
+             print(f"Solution: {d}\n")
     elif c == "*":
-        print(f"Solution: {a * b}\n")
+        d=a*b
+        print(f"Solution: {d}\n")
         if a == 0 or b == 0:
             print("Obviously the answer is ZERO, YOU IDIOT!! What did you think it was gonna be? You think it's a game?\n")
     elif c == "/":
+        d=a/b
         if b == 0:
             print("You IDIOT!!! WHY ARE YOU BEING A HERETIC??? DON'T YOU KNOW YOU CAN'T DO THAT AND DON'T ASK WHY\n")
             continue 
         else:
-            print(f"Solution: {a / b}\n")
+            print(f"Solution: {d}\n")
     else:
         print("YOU IDIOT!!!!DO YOU EVEN KNOW WHAT THE 4 BASIC OPERANDS ARE???? IT'S EVEN INDICATED.\n")
         continue
-    if (len(str(a+b))<3 or len(str(a-b))<3 or len(str(a))<3 or len(str(b))<3):
+    if (len(str(d))<=3 or len(str(a))<=3 or len(str(b))<=3):
         print("You are asking such an easy fcuking question, are you actually a 12 year old or an adult with a stunted brain?? RETARD!!!\n")
 
 
@@ -82,8 +86,6 @@ while True:
        print("You are capable enough to use a calculator. Okay leave now.")
        input("Press Enter to exit...")
        exit()
-
-
 
 
 
