@@ -17,6 +17,11 @@ insultsForEasyAnswer=["You are asking such an easy fcuking question, are you act
                       "Do you ask your MOM to get you ready as well?? You SMOOTH BRAINED BASTARD",
                       "I bet you are a 250 KG FAT BASTARD, aren't you??? GOT NOTHIGN BETTER TO DO AND ARE JUST WASTING TIME OF A PROGRAM!!!!!"]
 
+insultsForSillyInputs=["Don't waste yours and mine Fcuking time, We both know you are not using those values for anything",
+                       "If this input is a mistake, then don't worry you are as well. A FUCKING MISTAKE. I'm sure your parents regret having that mistake.",
+                       "When will you grow up bro, Is this your first time using calculator or something? Typing random fucking numbers for Operands",
+                       "At what should one think about What they are doing with their life (If you even one to begin with)??? Wasting time giving shitty inputs..."]
+
 
 def get_integer(prompt):
     value = input(prompt)
@@ -81,6 +86,8 @@ while True:
         continue
     if (len(str(d))<=3 or len(str(a))<=3 or len(str(b))<=3):
         print(random.choice(insultsForEasyAnswer))
+    if a or b in ["999999","000000","111111","123456789","987654321","99999999","0000000","11111111"]:
+        print(random.choice(insultsForSillyInputs))    
 
 
 
@@ -93,6 +100,9 @@ while True:
        print("You are capable enough to use a calculator. Okay leave now.")
        input("Press Enter to exit...")
        exit()
+
+
+
 
 
 
