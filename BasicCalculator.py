@@ -1,5 +1,5 @@
 # Trying to make a calculator with "PERSONALITY"
-# Copyright 2069 Heavenly Demon
+# Copyright 2069 Heavenly Demon 
 import random
 
 insultsForOperator=["Who gave you access to a calculator??\n",
