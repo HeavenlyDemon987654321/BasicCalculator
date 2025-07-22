@@ -86,7 +86,7 @@ while True:
         continue
     if (len(str(d))<=3 or len(str(a))<=3 or len(str(b))<=3):
         print(random.choice(insultsForEasyAnswer))
-    if a or b in ["999999","000000","111111","123456789","987654321","99999999","0000000","11111111"]:
+    if a or b in ["999999","000000","111111","123456789","987654321","99999999","0000000","11111111","00000000000","0123456789","9876543210"]:
         print(random.choice(insultsForSillyInputs))    
 
 
