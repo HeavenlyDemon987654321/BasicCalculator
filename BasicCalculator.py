@@ -1,5 +1,5 @@
-# Making a calculator
-# Copyright 2069 Tanmay Singh
+# Trying to make a calculator with "PERSONALITY"
+# Copyright 2069 Heavenly Demon
 import random
 
 insultsForOperator=["Who gave you access to a calculator??\n",
@@ -11,6 +11,13 @@ insultsForOperand=["You can't type a single digit correctly, just go sit in Kind
                    "Are you actually this dumb or are just pretending to be, either way YOU ARE INSUFFERABLE\n",
                    "I'm pretty sure your parents will be very disappointed in you, seeing as you can't enter numbers properly.\n",
                    "Take a bucket full of water, dunk your head in it and die of shame.\n"]
+
+insultsForEasyAnswer=["You are asking such an easy fcuking question, are you actually a 12 year old or an adult with a stunted brain?? RETARD!!!",
+                      "Do you want me to chew your food for you as well??? HUH?? YOU DUFFER",
+                      "Do you ask your MOM to get you ready as well?? You SMOOTH BRAINED BASTARD",
+                      "I bet you are a 250 KG FAT BASTARD, aren't you??? GOT NOTHIGN BETTER TO DO AND ARE JUST WASTING TIME OF A PROGRAM!!!!!"]
+
+
 def get_integer(prompt):
     value = input(prompt)
     if value.lower() in ["q", "quit"]:
@@ -73,7 +80,7 @@ while True:
         print("YOU IDIOT!!!!DO YOU EVEN KNOW WHAT THE 4 BASIC OPERANDS ARE???? IT'S EVEN INDICATED.\n")
         continue
     if (len(str(d))<=3 or len(str(a))<=3 or len(str(b))<=3):
-        print("You are asking such an easy fcuking question, are you actually a 12 year old or an adult with a stunted brain?? RETARD!!!\n")
+        print(random.choice(insultsForEasyAnswer))
 
 
 
@@ -86,6 +93,8 @@ while True:
        print("You are capable enough to use a calculator. Okay leave now.")
        input("Press Enter to exit...")
        exit()
+
+
 
 
 
