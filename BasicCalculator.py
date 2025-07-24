@@ -23,6 +23,16 @@ insultsForSillyInputs=["Don't waste yours and mine Fcuking time, We both know yo
                        "At what should one think about What they are doing with their life (If you even one to begin with)??? Wasting time giving shitty inputs..."]
 
 
+print("Hello!!! Welcome to BASIC CALCULATOR")
+print("These are the functions that this calculator can perform:")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+print("Now, use it at at your risk. Because while operating this calculator WILL throw insults and swears.")
+
+
 def get_integer(prompt):
     value = input(prompt)
     if value.lower() in ["q", "quit"]:
